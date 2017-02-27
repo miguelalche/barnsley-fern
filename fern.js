@@ -50,10 +50,10 @@ function step(variation) {
 
 var p = 0;
 var j = 0;
-setInterval(function () {
-	p += .05
-	j = cos(p) * 100
-},1)
+setInterval(function() {
+ p += .05
+ j = cos(p) * 100
+}, 1)
 
 function draw() {
  background(23)
@@ -61,24 +61,19 @@ function draw() {
  strokeWeight(3)
  translate(width / 2, height - 120)
 
-beginShape()
-for (var i = 0; i < 1000; i++) {
+ for (var i = 0; i < 1000; i++) {
   var val = Math.random();
   var randomNumber = 0;
   if (val < 0.01) { randomNumber = 0 } else
   if (val < 0.86) { randomNumber = 1 } else
   if (val < 0.93) { randomNumber = 2 } else
   if (val < 1.00) { randomNumber = 3 } else
-  	console.log(randomNumber, points._data[0],points._data[1])
-  	step(randomNumber)
-  	console.log(randomNumber, points._data[0],points._data[1])
-  	stroke(78,169,17)
-  	point(points._data[0]*j,points._data[1]*-50)
+   console.log(randomNumber, points._data[0], points._data[1])
+  step(randomNumber)
+  console.log(randomNumber, points._data[0], points._data[1])
+  stroke(78, 169, 17)
+  point(points._data[0] * j, points._data[1] * -50)
 
 
-}
- 
- 
-
-
+ }
 }
