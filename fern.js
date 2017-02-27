@@ -47,15 +47,6 @@ function step(variation) {
  }
 }
 
-console.log(points)
-step(0)
-console.log(points)
-step(3)
-console.log(points)
-step(3)
-console.log(points)
-step(2)
-console.log(points)
 
 var p = 0;
 var j = 0;
